@@ -36,9 +36,9 @@ except Exception as e:
 deviceCli.connect()
 
 while True:
-    lat= 10.960044
-    lon= 78.075053
-    location= "Madavilagam,Karur,Tamilnadu"
+    lat= 32.939021
+    lon= 75.135731
+    location= "Thiruparankundram, Madurai, Tamil Nadu, India"
     Distance= random.randint(1,75)
     Loadcell= random.randint(0,20)
     data= {'dist':Distance,'load':Loadcell,'Latitude':lat,'Longitude':lon,'Location':location}
@@ -71,7 +71,7 @@ while True:
         level="0%"
 
     if level=="90%" or load=="90%":
-          warn = 'alert:''Dustbin is almost filled in latitude:10.960044 and longitude:78.075053 Madavilagam,Karur,Tamilnadu'
+          warn = 'alert:''Dustbin is almost filled in latitude:32.939021 and longitude:75.135731 Thiruparankundram, Madurai, Tamil Nadu, India'
     
     def myOnPublishCallback(latitude=32.939021,longitude=75.135731 ):
         print("Thiruparankundram, Madurai, Tamil Nadu, India")
