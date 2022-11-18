@@ -9,11 +9,11 @@ import ibmiotf.device
 
 # watson device details
 
-organization = "3w5ire"
-devicType =  "Dustbin3"
-deviceId = "DustbinID3"
+organization = "a7g2jo"
+devicType =  "Garbage-Bin"
+deviceId = "Garbage_Bin-III"
 authMethod= "token"
-authToken= "987654321"
+authToken= "Cs_e4IG2RBps4cAMxe"
 
 #generate random values for random variables (Distance and load)
 
@@ -36,9 +36,9 @@ except Exception as e:
 deviceCli.connect()
 
 while True:
-    lat= 10.950140
-    lon= 78.079357
-    location= "Thirumanilayur,Karur,Tamilnadu"
+    lat= 10.960044
+    lon= 78.075053
+    location= "Madavilagam,Karur,Tamilnadu"
     Distance= random.randint(1,75)
     Loadcell= random.randint(0,20)
     data= {'dist':Distance,'load':Loadcell,'Latitude':lat,'Longitude':lon,'Location':location}
@@ -69,11 +69,12 @@ while True:
         level="10%"
     else:
         level="0%"
+
     if level=="90%" or load=="90%":
-        warn = 'alert:''Dustbin is almost filled in latitude:10.950140 and longitude:78.079357 Thirumanilayur,Karur'
+          warn = 'alert:''Dustbin is almost filled in latitude:10.960044 and longitude:78.075053 Madavilagam,Karur,Tamilnadu'
     
-    def myOnPublishCallback(latitude=10.950140,longitude=78.079357):
-        print("Thirumanilayur,Karur,Tamilnadu")
+    def myOnPublishCallback(latitude=32.939021,longitude=75.135731 ):
+        print("Thiruparankundram, Madurai, Tamil Nadu, India")
         print("published Level of bin = %s " %level,"Load = %s " %load, "Latitude = %s " %latitude,"Longitude = %s " %longitude)
         print(load)
         print(level)
