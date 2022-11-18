@@ -9,11 +9,11 @@ import ibmiotf.device
 
 # watson device details
 
-organization = "3w5ire"
-devicType =  "Dustbin4"
-deviceId = "DustbinID4"
+organization = "a7g2jo"
+devicType =  "Garbage-Bin"
+deviceId = "Garbage_Bin-IV"
 authMethod= "token"
-authToken= "987654321"
+authToken= "Cs_e4IG2RBps4cAMxe"
 
 #generate random values for random variables (Distance and load)
 
@@ -73,8 +73,8 @@ while True:
     if level=="90%" or load=="90%":
           warn = 'alert:''Dustbin is almost filled in latitude:10.960044 and longitude:78.075053 Madavilagam,Karur,Tamilnadu'
     
-    def myOnPublishCallback(latitude=10.960044,longitude=78.075053):
-        print("Madavilagam,Karur,Tamilnadu")
+    def myOnPublishCallback(latitude=32.939021,longitude=75.135731 ):
+        print("Thiruparankundram, Madurai, Tamil Nadu, India")
         print("published Level of bin = %s " %level,"Load = %s " %load, "Latitude = %s " %latitude,"Longitude = %s " %longitude)
         print(load)
         print(level)
